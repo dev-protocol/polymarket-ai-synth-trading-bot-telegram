@@ -2,7 +2,7 @@
 
 Focus: copy trading, latency arbitrage, 5-min cycle sniping, market making, simulation, and low-latency execution under current rules (post-Feb 2026 updates).
 
-English | [中文（简体）](https://github.com/dev-protocol/polymarket-trading-bots-telegram-service/blob/main/README-CN.md) | [Русский](https://github.com/dev-protocol/polymarket-trading-bots-telegram-service/blob/main/README-RU.md) | [Deutsch](https://github.com/dev-protocol/polymarket-trading-bots-telegram-service/blob/main/README-DE.md)
+English | [中文（简体）](https://github.com/dev-protocol/polymarket-trading-bots-telegram-service/blob/main/README-CN.md)| [Русский](https://github.com/dev-protocol/polymarket-trading-bots-telegram-service/blob/main/README-RU.md) | [Deutsch](https://github.com/dev-protocol/polymarket-trading-bots-telegram-service/blob/main/README-DE.md)
 
 ---
  <p align="center">
