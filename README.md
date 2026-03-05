@@ -2,18 +2,15 @@
 
 Imagine a future where AI-driven bots outpace human traders, exploiting microsecond edges in prediction markets to turn data into dollars. Our open-source Rust-based tools, fused with seamless Telegram integration, empower you to dive into this visionary realm of Polymarket trading.  
 Focus: copy trading, latency arbitrage, 5-min cycle sniping, market making, simulation, and low-latency execution under current rules (post-Feb 2026 updates).
-
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/610ca14e-8a6a-4948-a9ad-642a70ea9391" alt="image" width="800" height="561"/>
+  <img src="https://github.com/user-attachments/assets/610ca14e-8a6a-4948-a9ad-642a70ea9391" alt="image" width="800" height="561" />
 </p>
-
 ## 📹 Core YouTube Showcases – Current Work Highlights
 
 Step into the cutting-edge with these demos that showcase how our bots harness AI and speed to redefine trading.
 
 - ⚡ **Latency Arbitrage Bot (Rust, quick-build example)**: Reverse-engineered from real $50 → $435k BTC lag exploit case. Local execution, 0.3–0.8% targets, strict risk rules (0.5% per trade / 2% daily). Code + setup walkthrough.  
   [Watch Video](https://www.youtube.com/watch?v=jL8cuzkclHg)
-
 <p align="center">
   <img width="800" height="561" alt="image" src="https://github.com/user-attachments/assets/67319cc3-c14c-43d2-9b33-1935a5c94ce3" />
 </p>
@@ -79,7 +76,6 @@ Control the future of trading right from your chat—seamless, powerful, and vis
 ## ✨ Comprehensive Key Features (All Bots & Tools)
 
 Unlock the power of tomorrow's trading tech today—these features propel you into a world of automated alpha and edge-hunting precision.
-
 <p align="center">
   <img width="700" height="414" alt="image" src="https://github.com/user-attachments/assets/1f8d5ccf-1b6b-419b-ac5a-56e2cf1929d9" />
 </p>
@@ -123,8 +119,7 @@ Unlock the power of tomorrow's trading tech today—these features propel you in
 ⭐ Star/fork the repo. Contributions welcome — especially for post-2026 Polymarket rule adaptations, new strategies, or market maker enhancements.
 
 Envision the edge you're building—where bots don't just trade, they anticipate the future!
-
 <p align="center">
-  <img width="800" height="561" alt="image" src="https://github.com/user-attachments/assets/3059b5c6-62e5-48d2-96f6-0c9953c4bb2a" />
+  <img width="600" height="561" alt="image" src="https://github.com/user-attachments/assets/3059b5c6-62e5-48d2-96f6-0c9953c4bb2a" />
 </p>
 Let's keep building the edge! 🚀
