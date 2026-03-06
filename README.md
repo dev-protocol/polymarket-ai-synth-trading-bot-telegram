@@ -1,4 +1,4 @@
-# 🚀 Synth-Powered Polymarket Trading Bot Telegram Services (Updated 2026)
+# 🚀 Polymarket Trading Bot – Telegram Services (Synth-Powered | 2026 Update)
 
 Focus: copy trading, latency arbitrage, 5-min cycle sniping, **Synth-powered edge arbitrage**, market making, simulation, and low-latency execution under current rules (post-Feb 2026 updates).
 
