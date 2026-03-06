@@ -60,10 +60,10 @@ Control the future of trading right from your chat—seamless, powerful, and vis
 - 🛡️ **Cycle End Sniper | Polymarket 5-Min Trading Bot**: Latency sniping + paper/real modes, auto buys on thresholds, risk exits, wallet/deposit/withdraw/redeem, live logs & strategy config.  
   [Access Bot](https://t.me/poly5mbot)
 
-- 🎯 **Trading Simulator**: Risk-free testing of strategies.  
+- 🎯 **Mempool Copy Trading Bot**: High Speed of Copytrading.  
   [Access Bot](https://t.me/poly_copy_tg_bot)
 
-- 🚀 **Production/Test Bot**: Live-like execution with simulation/preview modes.  
+- 🚀 **Multi Whales - Copy Trading Bot**: Live copytrading with simulation/preview modes.  
   [Access Bot](https://t.me/poly_copy_prod_tg_bot)
 
 **Telegram Control Features** (for copy trading & others):  
