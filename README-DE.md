@@ -57,10 +57,10 @@ Steuern Sie die Zukunft des Tradings direkt aus dem Chat – nahtlos, leistungss
 - 🛡️ **Cycle-End-Sniper | Polymarket 5-Minuten-Trading-Bot**: Latency-Sniping + Paper/Real-Modi, Auto-Käufe bei Schwellen, Risiko-Ausstiege, Wallet/Deposit/Withdraw/Redeem, Live-Logs & Strategie-Konfiguration.  
   [Bot öffnen](https://t.me/poly5mbot)
 
-- 🎯 **Trading-Simulator**: Risikofreies Strategie-Testen.  
+- 🎯 **Mempool Copy Trading Bot**: Extrem hohe Copytrading-Geschwindigkeit.
   [Bot öffnen](https://t.me/poly_copy_tg_bot)
 
-- 🚀 **Produktions-/Test-Bot**: Live-ähnliche Ausführung mit Simulations-/Preview-Modi.  
+- 🚀 **Multi Whales - Copy Trading Bot**: Live-Copytrading mit Simulations- und Vorschau-Modi. 
   [Bot öffnen](https://t.me/poly_copy_prod_tg_bot)
 
 **Telegram-Steuerungsfunktionen** (für Copy-Trading & andere):  
