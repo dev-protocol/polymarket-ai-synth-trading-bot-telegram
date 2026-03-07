@@ -8,7 +8,7 @@ English | [中文（简体）](https://github.com/dev-protocol/polymarket-tradin
 
 ---
  <p align="center">
-    <a href="https://deepwiki.com/dev-protocol/polymarket-trading-bot-telegram-services-2026">
+    <a href="https://deepwiki.com/dev-protocol/polymarket-ai-synth-trading-bot-telegram">
      <img src="https://deepwiki.com/badge.svg" alt="Ask DeepWiki">
     </a>
      <a href="mailto:misssilverbeauty0927@gmail.com">
