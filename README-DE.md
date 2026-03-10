@@ -7,17 +7,19 @@
 [English](https://github.com/dev-protocol/polymarket-trading-bots-telegram-service/blob/main/README.md) | [中文（简体）](https://github.com/dev-protocol/polymarket-trading-bots-telegram-service/blob/main/README-CN.md) | [Русский](https://github.com/dev-protocol/polymarket-trading-bots-telegram-service/blob/main/README-RU.md) | Deutsch
 
 ---
- <p align="center">
-    <a href="https://deepwiki.com/dev-protocol/polymarket-trading-bot-telegram-services-2026">
-     <img src="https://deepwiki.com/badge.svg" alt="Ask DeepWiki">
+<p align="center">
+    <a href="https://deepwiki.com/dev-protocol/polymarket-ai-synth-trading-bot-telegram">
+        <img src="https://deepwiki.com/badge.svg" alt="Ask DeepWiki" />
     </a>
-     <a href="mailto:misssilverbeauty0927@gmail.com">
-      <img src="https://img.shields.io/badge/Email-misssilverbeauty0927@gmail.com-ef4444?style=flat&logo=gmail&logoColor=white" />
+    <a href="mailto:misssilverbeauty0927@gmail.com">
+        <img src="https://img.shields.io/badge/Email-misssilverbeauty0927@gmail.com-ef4444?style=flat&logo=gmail&logoColor=white" />
     </a>
     <a href="https://t.me/soulcrancerdev">
-      <img src="https://img.shields.io/badge/Telegram-soulcrancerdev-2AABEE?style=flat&logo=telegram&logoColor=white" />
+        <img src="https://img.shields.io/badge/Telegram-soulcrancerdev-2AABEE?style=flat&logo=telegram&logoColor=white" />
     </a>
-    <img src="https://github.com/user-attachments/assets/610ca14e-8a6a-4948-a9ad-642a70ea9391" alt="image" width="700" height="561" />
+    <a href="https://weixin.qq.com/" target="_blank">
+        <img src="https://img.shields.io/badge/weChat-wxid_7yb9mahngvvc22-07C160?style=flat&logo=wechat&logoColor=white" alt="WeChat" />
+    </a>
 </p>
 
 ## 📹 Kern-YouTube-Videos – Aktuelle Highlights
@@ -140,6 +142,10 @@ Nutzen Sie die Kraft der Trading-Technologie von morgen schon heute – diese Fe
 ⭐ Star/Fork das Repo. Beiträge willkommen – besonders für Anpassungen an die Polymarket-Regeln nach 2026, neue Strategien oder Market-Maker-Erweiterungen.
 
 Stellen Sie sich den Edge vor, den Sie aufbauen – wo Bots nicht nur traden, sondern die Zukunft vorwegnehmen!
+<!-- Optional: You can add your WeChat QR code image here -->
+<p align="center">
+    <img src="https://github.com/user-attachments/assets/283f5050-5319-4926-9ad8-3f5fe94046a1" alt="WeChat QR Code" width="200" />
+</p>
 <p align="center">⭐⭐⭐</p>
 <div align="center">
   <a href="https://t.me/poly5mbot" target="_blank">
