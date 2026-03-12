@@ -99,7 +99,9 @@ These written tutorials provide detailed explanations, rule updates, code concep
 
 Unlock the power of tomorrow's trading tech today—these features propel you into a world of automated alpha and edge-hunting precision.
 <p align="center">
-  <img width="700" height="414" alt="image" src="https://github.com/user-attachments/assets/839747c0-b643-46e5-97c5-0f126b4f7a50" />
+  <img width="450" height="414" alt="image" src="https://github.com/user-attachments/assets/839747c0-b643-46e5-97c5-0f126b4f7a50" />
+  <img width="250" height="758" alt="image" src="https://github.com/user-attachments/assets/9de6a4e1-f8de-4ca3-8694-0f0ee2228877" />
+
 </p>
 
 - 🤖 **Synth AI edge integration** — Query Bittensor SN50 (Synth) probabilistic forecasts via SDK/API → detect & auto-trade 5-15%+ mispricings vs. Polymarket implied odds on BTC/ETH/SOL hourly/15-min/daily Up-Down & range markets (top strategy in 2026)
