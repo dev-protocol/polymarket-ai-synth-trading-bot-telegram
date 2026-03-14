@@ -19,7 +19,7 @@ crossterm = "0.27"
 colored = "2.0"
 chrono = "0.4"
 ethers = { version = "2.0", features = ["full"] }
-alloy = { version = "0.1", features = ["full"] }
+alloy = { version = "0.15", features = ["full"] }
 hex = "0.4"
 futures = "0.3"
 lazy_static = "1.4"
